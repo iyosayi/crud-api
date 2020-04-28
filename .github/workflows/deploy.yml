@@ -31,7 +31,7 @@ jobs:
       - name: "Deploy to Azure"
         uses: azure/webapps-deploy@v2
         with:
-          app-name: "crud-api-node"
+          app-name: "crud-api-node-king1997"
 
       - name: logout
         run: |
