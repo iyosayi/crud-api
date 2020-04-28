@@ -22,6 +22,9 @@ jobs:
         npm run build --if-present
         npm run test --if-present
       - name: 'Deploy to Azure'
-  uses: azure/webapps-deploy@v2
-  with:
-    app-name: 'crud-node-api'
+      uses: azure/webapps-deploy@v2
+     with:
+      app-name: 'crud-node-api-king1997'
+    - name: logout
+    run: |
+      az logout
