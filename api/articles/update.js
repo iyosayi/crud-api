@@ -5,7 +5,7 @@ module.exports = function (route) {
   return route.put(async (req, res) => {
     try {
       const data = await model.updateDocument(req.body, req.params.id);
-      res.json({ data: { modifiedData: data.modifiedCount } });
+      res.json({ data: { modifiedCount: data.modifiedCount } });
     } catch (error) {
       httpError(res, error);
     }
