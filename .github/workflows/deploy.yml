@@ -6,7 +6,7 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: 'Checkout GitHub Action'
+       name: 'Checkout GitHub Action'
       uses: actions/checkout@master
       - name: 'Login to Azure'
       uses: azure/login@V1
