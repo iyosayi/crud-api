@@ -2,6 +2,8 @@
 // import the packages we need
 const express = require("express"); // express for routing
 const bodyParser = require("body-parser");
+const router = require("./routes/routes");
+const registerRoutes = require("./api/articles/");
 
 // CONFIGURE APP
 const app = express();
@@ -14,6 +16,9 @@ app.use(bodyParser.json());
 const port = process.env.PORT || 4000; // set our port
 
 // BASIC ROUTING
+
+app.use("/api", router);
+registerRoutes(router);
 
 app.get("/", function (_, res) {
   res.send("Welcome to our API");

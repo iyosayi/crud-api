@@ -1,8 +1,8 @@
-const path = require('path');
-const dotenv = require('dotenv');
+const path = require("path");
+const dotenv = require("dotenv");
 
-if (process.env.NODE_ENV === 'test') {
-  dotenv.config({ path: path.resolve(process.cwd(), '.test.env') });
+if (process.env.NODE_ENV === "test") {
+  dotenv.config({ path: path.resolve(process.cwd(), ".test.env") });
 } else {
   dotenv.config();
 }
